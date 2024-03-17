@@ -1,7 +1,3 @@
-
-number = int(input("Enter a number from 1 to 5: "))
-
-if 1 <= number <= 5:
-    print("Valid input")
-else:
-    print("Invalid input")
+for _ in range(5):
+    num = int(input("Enter a number: "))
+    print("Even" if num % 2 == 0 else "Odd")

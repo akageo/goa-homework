@@ -145,3 +145,4 @@ while number < number_after_addition:
     print(number)
     number = number + 1
 
+# randint() is an inbuilt function of the random module in Python3. The random module gives access to various useful functions one of them being able to generate random numbers, which is randint().

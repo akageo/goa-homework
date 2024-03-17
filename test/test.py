@@ -1,18 +1,35 @@
-# დაწერეთ პროგრამა, რომელიც იღებს მომხმარებლისგან მთელ რიცხვს და დაბეჭდავს მის გამრავლების ცხრილს 10-ის ჩათვლით. მაგ: x, x2, x3 ... x*10.
+score = int(input("enter your score: "))
 
-number = int(input("enter a number: "))
 
-for i in range(1, 11):
-    print(f"{number} x {i} = {number * i}")
+while score >= 90 or score >= 100 :
+    print("Excellent!")
+    score = int(input("enter your score: "))
 
-# second way
+if score >= 80 or score >= 89:
+    print("Good job!")
+    score = int(input("enter your score: "))
+if score >= 70 or score >= 79:
+    print("You passed.")
+    score = int(input("enter your score: "))
+elif score >= 60 or score >= 69:
+    print("You can do better.")
+    score = int(input("enter your score: "))
+else:
+    print(f"{59 <=59}You failed.")
+    score = int(input("enter your score: "))
 
-# num = (input("Enter a number: "))
 
-# length = len(num)
+grade = input("please enter your grade : ")
 
-# numbers_sum = 0
-# for i in range(length):
-#     numbers_sum = numbers_sum + int(num[i])
-
-# print(numbers_sum)
+if grade == "A":
+   print("Excellent")
+elif grade == "B":
+   print("good job") 
+elif grade == "C":
+   print("you passed")
+elif grade == "D":
+    print("you can do better")
+elif grade == "F":
+   print("you failed") 
+else:
+   print("try again")
